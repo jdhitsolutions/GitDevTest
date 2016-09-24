@@ -1,5 +1,5 @@
 This is a test file which can be used to try out pull requests. 
 
-Practice makes perfect.
+Practice makes perfect so perfect your practice.
 
 Thanks, for playing.
