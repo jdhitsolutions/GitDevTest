@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<Title> git Configuration</Title>
+<style>
+body { background-color:#FFFFFF;
+       font-family:Monospace;
+       font-size:10pt; }
+td, th { border:0px solid black; 
+         border-collapse:collapse;
+         white-space:pre;
+         font-size:12pt; }
+th { color:white;
+     background-color:black; }
+table, tr, td, th { padding: 0px; margin: 0px ;white-space:pre; }
+tr:nth-child(odd) {background-color: lightgray}
+table { margin-left:10px; }
+h2 {
+ font-family:Tahoma;
+}
+</style>
+
+</head><body>
+<H1>Git Configuration</H1>
+<table>
+<colgroup><col/><col/></colgroup>
+<tr><th>Computername</th><th>Username</th></tr>
+<tr><td>THINKP1</td><td>Jeff</td></tr>
+</table>
+<H2>GLOBAL</H2>
+<table>
+<colgroup><col/><col/><col/></colgroup>
+<tr><th>Category</th><th>Name</th><th>Setting</th></tr>
+<tr><td>alias</td><td>st</td><td>status</td></tr>
+<tr><td>alias</td><td>pushdev</td><td>!git checkout master &amp;&amp; git merge dev &amp;&amp; git push &amp;&amp; git checkout dev</td></tr>
+<tr><td>alias</td><td>logd</td><td>log --oneline --graph --decorate</td></tr>
+<tr><td>alias</td><td>last</td><td>log -1 HEAD</td></tr>
+<tr><td>alias</td><td>fp</td><td>!git fetch &amp;&amp; git pull</td></tr>
+<tr><td>color</td><td>ui</td><td>true</td></tr>
+<tr><td>core</td><td>excludesfile</td><td>~/.gitignore</td></tr>
+<tr><td>core</td><td>editor</td><td>&quot;C:\Users\Jeff Hicks\AppData\Local\Programs\Microsoft VS Code\Code.exe&quot; --wait</td></tr>
+<tr><td>core</td><td>autocrlf</td><td>true</td></tr>
+<tr><td>diff</td><td>tool</td><td>kdiff3</td></tr>
+<tr><td>difftool</td><td>prompt</td><td>false</td></tr>
+<tr><td>filter</td><td>lfs</td><td>true</td></tr>
+<tr><td>filter</td><td>lfs</td><td>git-lfs smudge -- %f</td></tr>
+<tr><td>filter</td><td>lfs</td><td>git-lfs clean -- %f</td></tr>
+<tr><td>gui</td><td>recentrepo</td><td>C:/Scripts/Gen2Tools</td></tr>
+<tr><td>gui</td><td>recentrepo</td><td>C:/Scripts/FormatFunctions</td></tr>
+<tr><td>gui</td><td>recentrepo</td><td>C:/Users/Jeff/Documents/WindowsPowerShell/Modules/PowerShellBingo</td></tr>
+<tr><td>gui</td><td>recentrepo</td><td>C:/Users/Jeff/Documents/WindowsPowerShell/Modules/ISEScriptingGeek</td></tr>
+<tr><td>gui</td><td>recentrepo</td><td>C:/Scripts/PSVirtualBox</td></tr>
+<tr><td>merge</td><td>tool</td><td>kdiff3</td></tr>
+<tr><td>mergetool</td><td>kdiff3</td><td>&#39;C:/Program Files/KDiff3/kdiff3.exe&#39; $BASE $LOCAL $REMOTE -o $MERGED</td></tr>
+<tr><td>push</td><td>default</td><td>simple</td></tr>
+<tr><td>user</td><td>email</td><td>jhicks@jdhitsolutions.com</td></tr>
+<tr><td>user</td><td>name</td><td>Jeff Hicks</td></tr>
+</table>
+<H2>SYSTEM</H2>
+<table>
+<colgroup><col/><col/><col/></colgroup>
+<tr><th>Category</th><th>Name</th><th>Setting</th></tr>
+<tr><td>credential</td><td>helper</td><td>manager</td></tr>
+<tr><td>diff</td><td>astextplain</td><td>astextplain</td></tr>
+<tr><td>filter</td><td>lfs</td><td>git-lfs filter-process</td></tr>
+<tr><td>filter</td><td>lfs</td><td>true</td></tr>
+<tr><td>filter</td><td>lfs</td><td>git-lfs smudge -- %f</td></tr>
+<tr><td>filter</td><td>lfs</td><td>git-lfs clean -- %f</td></tr>
+<tr><td>http</td><td>sslcainfo</td><td>C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt</td></tr>
+<tr><td>http</td><td>sslbackend</td><td>openssl</td></tr>
+</table>
+<table>
+</table>
+<h4>git version 2.21.0.windows.1</h4>
+</body></html>
