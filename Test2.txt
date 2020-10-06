@@ -1,23 +1,4 @@
-
 Status   Name               DisplayName
 ------   ----               -----------
 Running  bits               Background Intelligent Transfer Ser...
 
-
-   if ($pscmdlet.ShouldProcess($br, "Git merge")) {
-      git merge $br
-   }
-
-   if ($pscmdlet.ShouldProcess("master", "Git push")) {
-      git push
-   }
-
-   if ($pscmdlet.ShouldProcess($tag, "Git tag")) {
-      git tag $tag
-   }
-
-   if ($pscmdlet.ShouldProcess("--tag", "Git push")) {
-      git push --tag
-      Write-Host "Open and edit the release on GitHub"
-      $origin = git remote get-url --push origin
-      start "origin/releases/tag/$tag"
