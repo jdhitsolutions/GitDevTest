@@ -4,3 +4,6 @@
 . .\format-functions.ps1
 
 Write-Host "Thank you for playing." -foregroundcolor yellow
+<#
+foo
+#>
