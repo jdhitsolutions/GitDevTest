@@ -1,5 +1,5 @@
 #insert a comment here
 
-gps -Name win* | Measure-Object -Property ws -Sum
+gps -Name win* 
 
 #this is a pr-test entry

@@ -1,4 +1,5 @@
-﻿
+﻿#requires -version 5.1
+
 Function Format-Percent {
 
     [cmdletbinding(DefaultParameterSetName = "None")]
@@ -45,7 +46,6 @@ Function Format-Percent {
 } #end function
 
 Function Format-Value {
-
     [cmdletbinding(DefaultParameterSetName = "Default")]
     [alias("fv")]
 
@@ -191,7 +191,7 @@ Function Format-String {
         Write-Verbose "STATUS: Processing $Text"
         if ($Reverse) {
             Write-Verbose "STATUS: Reversing $($Text.length) characters"
-            $rev = for ($i = $Text.length; $i -ge 0 ; $i--) { $Text[$i]}
+            $rev = for ($i = $Text.length; $i -ge 0 ; $i--) { $Text[$i] }
             #join the reverse array back into a string
             $str = $rev -join ""
         }
@@ -204,7 +204,7 @@ Function Format-String {
             Write-Verbose "STATUS: Randomizing text"
             #get a random number of characters that is the same length as the original string
             #and join them back together
-            $str = ($str.ToCharArray() | Get-Random -count $str.length) -join ""
+            $str = ($str.ToCharArray() | Get-Random -Count $str.length) -join ""
         } #Randomize
 
         if ($Replace) {
