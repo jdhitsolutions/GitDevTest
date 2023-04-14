@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Push release to GitHub WHATIF",
+            "type": "shell",
+            "command": "c:\\scripts\\GitReleasePush.ps1 -whatif",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-noprofile"
+                    ]
+                }
+            }
+        },
+        {
+            "label": "Push PREVIEW release to GitHub",
+            "type": "shell",
+            "command": "c:\\scripts\\GitReleasePush.ps1 -PREVIEW",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-noprofile"
+                    ]
+                }
+            }
+        },
+        {
+            "label": "Push release to GitHub",
+            "type": "shell",
+            "command": "c:\\scripts\\GitReleasePush.ps1",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-noprofile"
+                    ]
+                }
+            }
+        }
+    ]
+}
