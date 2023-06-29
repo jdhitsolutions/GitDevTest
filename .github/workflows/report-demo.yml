@@ -1,0 +1,29 @@
+name: Run reports
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 10,20 * * *"
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACTION_BOT}}
+      - name: discovery
+        run: env
+      - name: run demo
+        shell: powershell
+        run: get-date | out-file $env:GITHUB_WORKSPACE\flag.txt ; find-module -tag ssh | export-clixml $env:GITHUB_WORKSPACE\ssh-modules.xml
+      - name: git status
+        run: git status
+      - name: git add
+        run: git add .
+      - name: git commit
+        run: |
+          git config user.name "Action Bot"
+          git config user.email "<>"
+          git commit -m "action updates"
+      - name: git push
+        run: git push

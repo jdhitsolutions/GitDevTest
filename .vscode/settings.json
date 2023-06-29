@@ -1,0 +1,11 @@
+{
+
+"powershell.scriptAnalysis.enable": true,
+"[powershell]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.codeLens": false,
+},
+"yaml.schemas": {
+    "https://json.schemastore.org/github-issue-forms.json": "file:///c%3A/Scripts/GitDevTest/.github/ISSUE_TEMPLATE/bug-report.yml"
+},
+}
