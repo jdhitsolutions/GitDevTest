@@ -11,7 +11,7 @@
 			"upgradePackages": "false",
 			"nonFreePackages": "true"
 		},
-		"ghcr.io/devcontainers/features/powershell:1": {},
+		"ghcr.io/devcontainers/features/powershell:2": {},
 		"ghcr.io/natescherer/devcontainers-custom-features/powershell-resources:1": {},
 		"ghcr.io/itsmechlark/features/1password:1": {}
 	},
